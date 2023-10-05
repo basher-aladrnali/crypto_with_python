@@ -21,7 +21,7 @@ def encrypt(plaintext, key):
         if letter not in letters:
             ciphertext += letter
         else:
-            ciphertext += letters[(letters.index(letter)) + key%26]
+            ciphertext += letters[(letters.index(letter) + key)%26]
 #output
 
     return ciphertext
@@ -32,7 +32,7 @@ print("Do ypu want to Encrypt ? ")
 user_input=input("Y/N:  ").upper()
 if user_input == "Y":
     print()
-    key = int(input("Enter the key (1 through 26): "))
+    key = int(input("Enter the key: "))
     plaintext = input("Enter the text to Encrypt: ")
     print(encrypt(plaintext, key))
 else:
