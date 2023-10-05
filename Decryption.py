@@ -28,7 +28,7 @@ def decrypt(ciphertext, key):
 
 #input
 print()
-print("Do ypu want to Dncrypt ? ")
+print("Do you want to Decrypt ? ")
 user_input=input("Y/N:  ").upper()
 if user_input == "Y":
     print()
