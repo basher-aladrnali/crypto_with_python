@@ -28,7 +28,7 @@ def encrypt(plaintext, key):
 
 #input
 print()
-print("Do ypu want to Encrypt ? ")
+print("Do you want to Encrypt ? ")
 user_input=input("Y/N:  ").upper()
 if user_input == "Y":
     print()
