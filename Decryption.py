@@ -21,7 +21,7 @@ def decrypt(ciphertext, key):
         if letter not in letters:
             plaintext += letter
         else:
-            plaintext += letters[(letters.index(letter) + key)%26]
+            plaintext += letters[(letters.index(letter) - key)%26]
 #output
 
     return plaintext
